@@ -25,19 +25,19 @@ const GetStarted = ()=>{
                      <button onClick={handleTeleTherapy} className={teleAssistance==='true'?"font-semibold font-poppins text-white bg-black px-6 py-2 rounded-full":"font-semibold font-poppins text-[#757575]"}>Teletherapy Assisatance</button>
                 </div>
 
-                <div>
+                <div className="mt-8">
 
               {
                 eduAssistance==='true'? (
                     <div className="flex justify-between items-end my-4 ">
                     <img className="h-96" src={require('../assets/Education1.png')} alt="edu2"/>
-                    <img className="h-80" src={require('../assets/Education2.png')} alt="edu1"/>
+                    <img className="h-80"  src={require('../assets/Education2.png')} alt="edu1"/>
 
                 </div>
                 ):(
                     <div className="flex justify-between items-end my-4">
                     <img className="h-96" src={require('../assets/Tele1.png')} alt="Tele1"/>
-                    <img className="h-80" src={require('../assets/Tele2.png')} alt="Tele2"/>
+                    <img className="h-96"  src={require('../assets/Tele2.png')} alt="Tele2"/>
 
                 </div>
                 )
