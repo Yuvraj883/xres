@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = ()=>{
     return(
         <>
@@ -6,7 +8,9 @@ const Hero = ()=>{
             <div className="flex flex-col items-start justify-center">
                     <h1 className="text-[60px] mb-3 font-bold leading-tight">Unlocking Potential Through Inclusivity</h1>
                     <h3 className="text-xl font-bold">Learning Without Limits</h3>
+                    <Link to="/get-started">
                     <button className=" bg-black font-semibold px-6 text-white py-2 rounded-full mt-8">Get Started</button>
+                    </Link>
                 </div>
 
                 <img className="w-[473px] h-[586px] animate-custom-bounce"
