@@ -4,8 +4,9 @@ const Navbar = () => {
   // const backgroundImage = `url('../assets/linear-gradient-shadow.png')`;
 
   return (
-   <>   
-     <img className="relative h-48 w-[100%] mb-[-10%]" src={require('../assets/background-img.png')} alt="shadow"/>
+   <>  
+   <div className="flex justify-center"> 
+     <img className="relative right-10 h-48 w-[100%] mb-[-10%]" src={require('../assets/background-img.png')} alt="shadow"/>
         <div className=" absolute w-[90%] top-5 flex flex-row bg-white justify-between px-4 mx-8  items-center shadow-2xl rounded-full -shadow-3xl">
         <Link to="/">
                     <span className="font-bold text-xl">XRES</span>
@@ -23,6 +24,7 @@ const Navbar = () => {
               />
             </li>
           </ul>
+        </div>
         </div>
       
       </>
