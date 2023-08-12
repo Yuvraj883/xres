@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* styles.css */
+
+@keyframes custom-bounce {
+    0%, 100% {
+      transform: translateY(0); /* Start and end position, no bounce */
+    }
+    50% {
+      transform: translateY(-20px); /* Peak of the bounce */
+    }
+  }
+  
+  .animate-custom-bounce {
+    animation: custom-bounce 1s infinite; /* Adjust animation duration as needed */
+  }
+  
