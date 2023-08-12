@@ -1,15 +1,12 @@
-
 const Navbar = () => {
-    return (
-      <>
-      
-        {/* <img src={require('../assets/linear-gradient-shadow.png')} className='relative h-20' alt="bg"/> */}
-      
-        <div className="flex flex-row  bg-white justify-between px-4 mx-8 my-4 items-center shadow-2xl rounded-full -shadow-3xl 
-        ">
+  const backgroundImage = `url('./assets/linear-gradient-shadow.png')`;
+
+  return (
+   
+      <div style={{backgroundImage}} className="container">
+        <div className="flex flex-row bg-white justify-between px-4 mx-8 my-4 items-center shadow-2xl rounded-full -shadow-3xl">
           <span className="font-bold text-xl">XRES</span>
-  
-          <ul className="flex font-semibold ">
+          <ul className="flex font-semibold">
             <li className="p-2 cursor-pointer">Home</li>
             <li className="p-2 cursor-pointer">Features</li>
             <li className="p-2 cursor-pointer">Sign Up</li>
@@ -22,11 +19,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        
+      </div>
     
-      </>
-    );
-  };
-  
-  export default Navbar;
-  
+  );
+};
+
+export default Navbar;
