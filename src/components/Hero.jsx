@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Hero = ()=>{
     return(
         <>
-            <div className="flex flex-row justify-center items-center my-8 px-[10%]">
+            <div className="flex flex-row justify-center items-center mt-[5%] px-[10%]">
 
             <div className="flex flex-col items-start justify-center">
                     <h1 className="text-[60px] mb-3 font-bold leading-tight">Unlocking Potential Through Inclusivity</h1>
