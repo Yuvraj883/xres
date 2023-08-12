@@ -3,42 +3,44 @@ const Model = ()=>{
     const [showCaption, setShowCaption] = useState(false);
     return(
         <>
-            <div className="bg-gray-200 h-[600px] p-2 ">
-                <div className="bg-yellow-200 h-[580px] relative">
-                    <div className="h-[300px] w-[300px] bg-red-200 bottom-1 right-1 absolute ">
+        <div className="flex flex-col">
+            <div className="bg-gray-200 h-screen p-2 flex flex-col ">
+                <div className="bg-yellow-200 h-[99.4%] relative">
+                    <div className="h-[250px] w-[300px] bg-red-200 bottom-1 right-1 absolute ">
                     
                     </div>
                     <div className="absolute bottom-2  flex left-[25%] ">
-                        <div className="py-3 px-4 bg-white rounded-full">
+                        <div className="py-2 px-6 bg-white rounded-full flex justify-center items-center m-2 ">
                             <img className="h-8 cursor-pointer" src={require('../assets/Mic.png')} alt="Mic"/>
                         </div>
-                        <div className="py-3 px-4 bg-white rounded-full">
+                        <div className="py-3 px-5 bg-white rounded-full flex justify-center items-center m-2 ">
                             <img className="h-8 cursor-pointer" src={require('../assets/Plus.png')} alt="Plus"/>
                         </div>
-                        <div className="py-3 px-4 bg-white rounded-full">
+                        <div className="py-3 px-4 bg-white rounded-full flex justify-center items-center m-2 ">
                             <img className="h-8 cursor-pointer" src={require('../assets/Book.png')} alt="Book"/>
                         </div>
-                        <div className="py-3 px-4 bg-white rounded-full">
+                        <div className="py-3 px-5 bg-white rounded-full flex justify-center items-center m-2 ">
                             <img className="h-8 cursor-pointer" src={require('../assets/Hand.png')} alt="Hand"/>
                         </div>
-                        <div className="py-3 px-4 bg-white rounded-full">
-                            <img className="h-8 cursor-pointer" src={require('../assets/CC.png')} alt="CC"/>
+                        <div className="py-6 px-5 bg-white rounded-full flex justify-center items-center m-2 ">
+                            <img className="h-6 cursor-pointer" src={require('../assets/CC.png')} alt="CC"/>
                         </div>
-                        <div className="py-1 px-4 bg-white rounded-full">
+                        <div className="py-3 px-5 bg-white rounded-full flex justify-center items-center m-2 ">
                             <img className="h-8 cursor-pointer" src={require('../assets/Speak.png')} alt="Speak"/>
                         </div>
-                        <div className="py-4 px-4 bg-white rounded-full m-1">
+                        <div className="py-3 px-5 bg-white rounded-full flex justify-center items-center  m-2 ">
                             <img className="h-8 cursor-pointer" src={require('../assets/Delete.png')} alt="Delete"/>
                         </div>
                     </div>
 
-                    <div className="absolute transform rotate-45  top-1 right-1">
-                        <img className="h-12 cursor-pointer"
+                    <div className="absolute transform rotate-45 bg-white py-3 px-3 rounded-full  top-1 right-1">
+                        <img className="h-8 cursor-pointer"
                         src={require('../assets/Plus.png')} alt="Cut"/>
                     </div>
 
                 </div>
                 
+            </div>
             </div>
         </>
     )
