@@ -1,4 +1,4 @@
-import Solutions from "./Solutions";
+import Solutions from "./components/Solutions";
 import GetStarted from "./components/GetStarted";
 import Hero from "./components/Hero";
 import Model from "./components/Model";
@@ -9,13 +9,11 @@ function App() {
   return (
    <>
    <GetStarted/>
-
    <Model/> 
    <Navbar/>
    <Hero/>
    <Solutions/>
-
-   
+  
    </>
   );
 }
