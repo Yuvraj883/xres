@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Model = ()=>{
     const [showCaption, setShowCaption] = useState(false);
     return(
@@ -7,6 +8,7 @@ const Model = ()=>{
             <div className="bg-gray-200 h-screen p-2 flex flex-col ">
                 <div className="bg-yellow-200 h-[99.4%] relative">
                     <div className="h-[250px] w-[300px] bg-red-200 bottom-1 right-1 absolute ">
+                    
                     
                     </div>
                     <div className="absolute bottom-2  flex left-[25%] ">
@@ -33,10 +35,11 @@ const Model = ()=>{
                         </div>
                     </div>
 
-                    <div className="absolute transform rotate-45 bg-white py-3 px-3 rounded-full  top-1 right-1">
+                  <Link to="/">  <div className="absolute transform rotate-45 bg-white py-3 px-3 rounded-full  top-1 right-1">
                         <img className="h-8 cursor-pointer"
                         src={require('../assets/Plus.png')} alt="Cut"/>
                     </div>
+                    </Link>
 
                 </div>
                 
