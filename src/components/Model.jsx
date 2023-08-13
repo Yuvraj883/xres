@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 const Model = ()=>{
-    const [showCaption, setShowCaption] = useState(false);
+    const [showCC ,setShowCC] = useState(false);
+    const toggleShowCC = ()=>{
+       setShowCC(!showCC);
+    }
     return(
         <>
         <div className="flex flex-col">
@@ -11,6 +14,14 @@ const Model = ()=>{
                     
                     
                     </div>
+                    {
+                     showCC &&
+                    <div className="absolute bottom-28 left-10 bg-white text-lg h-32 w-[75%] rounded-lg p-2 ">
+                    </div>
+
+
+                    }
+
                     <div className="absolute bottom-2  flex left-[25%] ">
                         <div className="py-2 px-6 bg-white rounded-full flex justify-center items-center m-2 ">
                             <img className="h-8 cursor-pointer" src={require('../assets/Mic.png')} alt="Mic"/>
@@ -24,7 +35,7 @@ const Model = ()=>{
                         <div className="py-3 px-5 bg-white rounded-full flex justify-center items-center m-2 ">
                             <img className="h-8 cursor-pointer" src={require('../assets/Hand.png')} alt="Hand"/>
                         </div>
-                        <div className="py-6 px-5 bg-white rounded-full flex justify-center items-center m-2 ">
+                        <div onClick={toggleShowCC} className={showCC?"py-6 px-5 bg-red-500 rounded-full flex justify-center items-center m-2 ":"py-6 px-5 bg-white rounded-full flex justify-center items-center m-2 "}>
                             <img className="h-6 cursor-pointer" src={require('../assets/CC.png')} alt="CC"/>
                         </div>
                         <div className="py-3 px-5 bg-white rounded-full flex justify-center items-center m-2 ">
